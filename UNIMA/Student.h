@@ -4,14 +4,10 @@
 using namespace std;
 
 class Student : public Person{
-    private:
-        string studentId;
-        string course;
-        double marks;
+private:
+    string studentId;
 
-    public:
-        Student(string name, string studentId, string course, double marks);
-        void displayInfo() override;
-        char getGrade() const;
+public:
+    Student(string name, string studentI);
+    void displayStudentInfo();
 };
-

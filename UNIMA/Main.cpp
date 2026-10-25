@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    Student student("Chimango", "UNIMA329", "Computer programming", 87.4);
-    student.displayInfo();
+    Student student("Chimango", "UNIMA329");
+    student.displayStudentInfo();
 
     return 0;
 }
