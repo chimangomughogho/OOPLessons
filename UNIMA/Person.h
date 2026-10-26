@@ -8,7 +8,7 @@ class Person{
 
     public:
         Person(string name);
-        virtual ~Person() = default;
+        virtual ~Person();
         virtual void displayInfo() = 0;
 
 };

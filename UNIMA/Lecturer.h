@@ -10,7 +10,9 @@ private:
 
 public:
     Lecturer(string name, string staffId);
+    ~Lecturer() override;
     void displayInfo() override;
+
 };
 
 
