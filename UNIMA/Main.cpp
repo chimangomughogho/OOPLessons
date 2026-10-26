@@ -1,4 +1,5 @@
 #include <iostream>
+#include <array>
 #include "Student.h"
 #include "Lecturer.h"
 using namespace std;
@@ -8,20 +9,20 @@ int main() {
     Student student("Chimango", "UNIMA329");
     Lecturer lecturer("Mwawi Msiska", "UNIMA35f" );
 
-    cout << "\n\n";
+    cout << "\n";
 
     Person* p2 = &lecturer;
     Person* p1 = &student;
 
-    cout << "Student Information:\n";
-    p1->displayInfo();
+    // Person* person[] = {&lecturer, &student};
 
-    cout << endl;
+    array<Person*, 2> person;
+    person[0] = &student;
+    person[1] = &lecturer;
 
-    cout << "Lecturer Information:\n";
-    p2->displayInfo();
-
-    cout << endl;
-
+    for(int i = 0; i < person.size(); i++){
+        person[i]->displayInfo();
+        cout << endl;
+    }
     return 0;
 }
