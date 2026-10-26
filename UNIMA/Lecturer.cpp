@@ -6,7 +6,7 @@ Lecturer::Lecturer(string name, string staffId) : Person(name), staffId(staffId)
 
 }
 
-void Lecturer::displayLecturerInfo(){
-    displayInfo();
+void Lecturer::displayInfo(){
+    Person::displayInfo();
     cout << "Staff ID: " << staffId << endl;
 } 

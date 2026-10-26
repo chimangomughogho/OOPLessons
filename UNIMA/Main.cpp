@@ -4,13 +4,20 @@
 using namespace std;
 
 int main() {
-    cout << "Student Information\n";
+
     Student student("Chimango", "UNIMA329");
-    student.displayStudentInfo();
+    Lecturer lecturer("Mwawi Msiska", "UNIMA35f" );
+    
+    Person* p2 = &lecturer;
+    Person* p1 = &student;
+
+    cout << "Student Information:\n";
+    p1->displayInfo();
 
     cout << endl;
-    cout << "Lecturer Information\n";
-    Lecturer lecturer("Mwawi Msiska", "UNIMA35f" );
-    lecturer.displayLecturerInfo();
+
+    cout << "Lecturer Information:\n";
+    p2->displayInfo();
+
     return 0;
 }

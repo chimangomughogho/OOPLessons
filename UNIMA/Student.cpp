@@ -6,7 +6,7 @@ Student::Student(string name, string studentId) : Person(name), studentId(studen
 
 }
 
-void Student::displayStudentInfo(){
-    displayInfo();
+void Student::displayInfo(){
+    Person::displayInfo();
     cout << "Student ID: " << studentId << endl;
 }

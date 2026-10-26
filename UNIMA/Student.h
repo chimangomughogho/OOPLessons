@@ -9,5 +9,5 @@ private:
 
 public:
     Student(string name, string studentI);
-    void displayStudentInfo();
+    void displayInfo() override;
 };
